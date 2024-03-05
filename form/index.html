@@ -1,0 +1,66 @@
+<form
+  onsubmit="event.preventDefault()"
+  class="container mx-auto mt-8 space-y-6 rounded-md border-2 border-purple-600 bg-white p-4 text-purple-950 shadow-md"
+>
+  <div class="space-y-1">
+    <label for="required" class="mb-1 block text-sm font-semibold"
+      >Required Field</label
+    >
+    <input
+      id="required"
+      type="email"
+      class="w-full rounded-md border-2 border-purple-400 p-2 placeholder-purple-500 outline-none ring-purple-300/70 valid:border-green-700 focus:ring-2"
+      placeholder="Email"
+      required
+    />
+  </div>
+
+  <div class="space-y-1">
+    <label for="disabled" class="mb-1 block text-sm font-semibold"
+      >Disabled Field</label
+    >
+    <input
+      id="disabled"
+      class="w-full rounded-md border-2 border-purple-400 bg-purple-50 p-2 placeholder-purple-500 outline-none disabled:cursor-not-allowed"
+      placeholder="Disabled Field"
+      disabled
+    />
+  </div>
+
+  <div class="space-y-1">
+    <label for="input" class="mb-1 block text-sm font-semibold">
+      Input Field
+    </label>
+    <input
+      id="input"
+      class="w-full rounded-md border-2 border-purple-400 p-2 placeholder-purple-500 outline-none ring-purple-300 focus:ring-2"
+      placeholder="Input Field"
+    />
+  </div>
+
+  <div class="space-x-1">
+    <input id="terms" class="accent-purple-700" type="checkbox" />
+    <label for="terms">I accept the terms and conditions.</label>
+  </div>
+
+  <div class="space-x-2">
+    <button
+      class="rounded border-2 border-purple-800 bg-purple-300 px-2 py-1 text-purple-900 hover:bg-purple-400 active:bg-purple-500"
+    >
+      Submit
+    </button>
+    <button
+      class="rounded border-2 border-purple-800 bg-white px-2 py-1 text-purple-500 active:bg-purple-100"
+    >
+      Reset
+    </button>
+    <button
+      class="rounded border-2 px-2 py-1 active:bg-purple-100 disabled:border-purple-300 disabled:text-purple-300"
+      disabled
+    >
+      Disabled
+    </button>
+  </div>
+</form>
+
+<!-- https://play.tailwindcss.com/NbEXKRT5u3 -->
